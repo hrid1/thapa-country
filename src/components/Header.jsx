@@ -2,11 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="bg-[#1b4332] py-4">
-      <header className="container  mx-auto flex items-center justify-between  w-full px-4">
+    <div className="bg-[#032317] py-4">
+      <header className="container  mx-auto flex items-center justify-between  w-full py-2.5 px-4 ">
         {/* logo */}
         <div>
-          <h2 className="text-white font-bold text-xl">WordAtlas</h2>
+          <h2 className="text-white font-bold text-2xl">WordAtlas</h2>
         </div>
 
         {/* links */}

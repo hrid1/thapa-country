@@ -1,4 +1,6 @@
+import { FaArrowRightArrowLeft, FaArrowRightLong } from "react-icons/fa6";
 import world from "../assets/wdone2.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Banner = () => {
   return (
@@ -12,14 +14,17 @@ const Banner = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
           dolorem!
         </p>
-        <button className="border bg-gray-800 px-3 py-2 font-semibold rounded-md hover:-translate-y-1 hover:bg-gray-900 ho duration-300 shadow-md">
+        <button className="border border-gray-500 bg-gray-900 px-3 py-2 font-semibold rounded-md hover:border-gray-200 hover:-translate-y-1  duration-300 shadow-md flex items-center gap-2.5">
           Start Exploring
+          
+           <FaLongArrowAltRight></FaLongArrowAltRight>
+
         </button>
       </div>
 
       {/* image */}
-      <div className="flex items-center justify-center  h-full">
-        <img className=" w-full object-cover bg mb-8" src={world} alt="" />
+      <div className="flex items-center justify-center h-full">
+        <img className=" w-full object-cover md:mb-8 mt-4 md:mt-0" src={world} alt="" />
       </div>
     </section>
   );

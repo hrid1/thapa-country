@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "countryName": "Japan",
+      "capital": "Tokyo",
+      "population": 126.3,
+      "interestingFact": "Japan is known as the 'Land of the Rising Sun' and has over 6,800 islands."
+    },
+    {
+      "id": 2,
+      "countryName": "Brazil",
+      "capital": "Brasília",
+      "population": 213.3,
+      "interestingFact": "Brazil is the only country in South America that speaks Portuguese."
+    },
+    {
+      "id": 3,
+      "countryName": "Canada",
+      "capital": "Ottawa",
+      "population": 38,
+      "interestingFact": "Canada has the longest coastline of any country in the world."
+    },
+    {
+      "id": 4,
+      "countryName": "Australia",
+      "capital": "Canberra",
+      "population": 25.7,
+      "interestingFact": "Australia is home to more kangaroos than people."
+    },
+    {
+      "id": 5,
+      "countryName": "India",
+      "capital": "New Delhi",
+      "population": 1393,
+      "interestingFact": "India is the world's largest democracy by population."
+    },
+    {
+      "id": 6,
+      "countryName": "France",
+      "capital": "Paris",
+      "population": 67.4,
+      "interestingFact": "France is the most visited country in the world."
+    },
+    {
+      "id": 7,
+      "countryName": "South Africa",
+      "capital": "Pretoria",
+      "population": 59.3,
+      "interestingFact": "South Africa has three capital cities: Pretoria, Bloemfontein, and Cape Town."
+    },
+    {
+      "id": 8,
+      "countryName": "Italy",
+      "capital": "Rome",
+      "population": 60.3,
+      "interestingFact": "Italy is home to the largest number of UNESCO World Heritage Sites."
+    }
+  ]
+  
