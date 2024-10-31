@@ -5,5 +5,5 @@ const api = axios.create({
 })
 
 export const getCountryData = () => {
-    return api.get("/all?fields=name,capital,region,capital,flags")
+    return api.get("/all?fields=name,population,capital,region,capital,flags")
 }
