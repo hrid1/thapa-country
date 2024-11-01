@@ -16,7 +16,6 @@ const Country = () => {
     });
   }, []);
 
-  // // 2nd rule
 
   console.log(countries);
   if (isPending) return <Spiner></Spiner>;
@@ -26,9 +25,9 @@ const Country = () => {
         This is country page
       </h2>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-6">
         {countries.map((country, index) => (
-          <CountryCard index={index} country={country}></CountryCard>
+          <CountryCard key={index} country={country}></CountryCard>
         ))}
       </section>
     </div>
