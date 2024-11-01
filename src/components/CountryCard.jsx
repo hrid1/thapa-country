@@ -9,7 +9,7 @@ const CountryCard = ({ country }) => {
     region,
     capital,
   } = country;
-  console.log(country.population);
+  
   return (
     <div className="p-8 max-w-lg border border-green-800 rounded-2xl hover:shadow-xl hover:shadow-green-900 flex flex-col ">
       <img

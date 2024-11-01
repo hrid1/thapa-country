@@ -2,6 +2,7 @@ import { useEffect, useState, useTransition } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getIndvCountryData } from "../../api/postApi";
 import Spiner from "../../components/Spiner";
+import SearchFilter from "../../components/SearchFilter";
 
 const CountryDetails = () => {
   const { id: cName } = useParams();
@@ -10,6 +11,10 @@ const CountryDetails = () => {
   //   loaded the data
   const [isPending, startTransition] = useTransition();
   const [country, setCountry] = useState();
+  // search and filter
+  const [search, setSearch] = useState();
+  const [filter, setFilter] = useState("all");
+
   useEffect(() => {
     startTransition(async () => {
       const res = await getIndvCountryData(cName);
@@ -24,6 +29,8 @@ const CountryDetails = () => {
 
   //   for loading data
   if (isPending || !country) return <Spiner></Spiner>;
+
+  console.log(search, filter);
 
   const {
     flags,
@@ -41,6 +48,15 @@ const CountryDetails = () => {
   console.log(Object.keys(languages));
   return (
     <div className="my-10 mx-4 md:mx-12">
+      {/* search option */}
+      <SearchFilter
+        search={search}
+        setSearch={setSearch}
+        filte={filter}
+        setFilter={setFilter}
+      />
+
+      {/* country info */}
       <section className="flex flex-col md:flex-row justify-between gap-6 ">
         <div className="md:w-1/2 flex items-center justify-center">
           <img className="w -4/5" src={flags.png} alt="" />
@@ -114,11 +130,14 @@ const CountryDetails = () => {
         </div>
       </section>
 
-      <div className="flex justify-end">
-        <button onClick={() => navigate(-1)} className="border px-3.5 py-2.5 rounded-xl ">
+      <section className="flex justify-end">
+        <button
+          onClick={() => navigate(-1)}
+          className="border px-3.5 py-2.5 rounded-xl "
+        >
           Go Back
         </button>
-      </div>
+      </section>
     </div>
   );
 };
